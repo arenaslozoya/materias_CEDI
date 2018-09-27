@@ -11,5 +11,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+  clickHistoria()
+  {
+    this.navCtrl.push(this.historia);
+  }
 
 }
