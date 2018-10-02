@@ -12,6 +12,7 @@ import { ComPage } from '../pages/com/com';
 import { CsPage } from '../pages/cs/cs';
 import { PyePage } from '../pages/pye/pye';
 import { RoboPage } from '../pages/robo/robo';
+import { AppsPage } from '../pages/apps/apps';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RoboPage } from '../pages/robo/robo';
     ComPage,
     CsPage,
     PyePage,
-    RoboPage
+    RoboPage,
+    AppsPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ import { RoboPage } from '../pages/robo/robo';
     ComPage,
     CsPage,
     PyePage,
-    RoboPage
+    RoboPage,
+    AppsPage
   ],
   providers: [
     StatusBar,
