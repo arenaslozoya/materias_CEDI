@@ -5,6 +5,7 @@ import { DibujoPage } from '../dibujo/dibujo';
 import { ComPage } from '../com/com';
 import { CsPage } from '../cs/cs';
 import { PyePage } from '../pye/pye';
+import { RoboPage } from '../robo/robo';
 
 @Component({
   selector: 'page-home',
@@ -16,6 +17,7 @@ export class HomePage {
   com = ComPage;
   cs = CsPage;
   pye = PyePage;
+  robo = RoboPage;
   constructor(public navCtrl: NavController) {
 
   }
@@ -41,5 +43,9 @@ export class HomePage {
   clickPyE()
   {
     this.navCtrl.push(this.pye);
+  }
+  clickRobo()
+  {
+    this.navCtrl.push(this.robo);
   }
 }
