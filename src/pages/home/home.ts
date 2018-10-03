@@ -7,6 +7,7 @@ import { CsPage } from '../cs/cs';
 import { PyePage } from '../pye/pye';
 import { RoboPage } from '../robo/robo';
 import { AppsPage } from '../apps/apps';
+import { MiPage } from '../mi/mi';
 
 @Component({
   selector: 'page-home',
@@ -20,6 +21,7 @@ export class HomePage {
   pye = PyePage;
   robo = RoboPage;
   apps = AppsPage;
+  mi = MiPage;
   constructor(public navCtrl: NavController) {
 
   }
@@ -53,5 +55,10 @@ export class HomePage {
   clickApps()
   {
     this.navCtrl.push(this.apps);
+  }
+  
+  clickMi()
+  {
+    this.navCtrl.push(this.mi);
   }
 }
